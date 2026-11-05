@@ -13,12 +13,8 @@ const pesoElement = document.getElementById("peso")
 let number
 cargarElement.addEventListener('click', () => {
   number = generarAleatorio(1, 151)
-  cargarPagina()
-})
-
-function cargarPagina() {
   fetchData(`${pokeAPI}${number}`)
-}
+})
 
 
 
